@@ -5,7 +5,20 @@
   "projects": {
     "router-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false,
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "standalone": false,
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false,
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

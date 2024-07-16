@@ -1,22 +1,25 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {FirstComponent} from './first/first.component';
-import {SecondComponent} from './second/second.component';
+import { AppComponent } from './app.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent} from './second/second.component'
 import { NotFoundComponent } from './not-found/not-found.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    NotFoundComponent
-    
+    NotFoundComponent,
+
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
